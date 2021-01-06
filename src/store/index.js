@@ -4,5 +4,6 @@ import reducer from '../reducers/index'
 
 let store
 export function configureStore() {
-  store = createStore(combineReducers(, applyMiddleware(thunk))
+  store = createStore(reducer, applyMiddleware(thunk))
+  return store
 }
